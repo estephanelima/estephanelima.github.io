@@ -113,7 +113,12 @@ nav a:hover, nav a:focus
     text-align: center;
 }
 
-.historia h2 {color: white;}
+.historia h2 {
+    color: white;
+    text-shadow: black 1px 1px 5px;
+    border-bottom: solid 5px;
+    padding-bottom: 5px;    
+}
 
 .historia iframe {
     width: 100%;
@@ -167,7 +172,7 @@ quando visualizado em determinados tamanhos*/
      }
 
      nav a {
-         font-size: 1rem;
+         font-size: 0.5rem;
      }
 @media screen and (max-width: 568px){
     .destaque h2 {font-size: 3rem;}
