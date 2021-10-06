@@ -1,0 +1,175 @@
+/* Regra utilitária para ajuste do box model CSS (modelo caixa) */
+* { box-sizing: border-box;}
+
+/* Regra utilitária para resete (limpar) de alguns elementos */
+body,h1,h2,p,figure {
+    margin: 0;
+    padding: 0; }
+
+/* Tag raiz */
+html{font-size: 18px;}
+
+/* Essa tag serve para todo o conteudo do site */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Essa tira o sublinhado dos links */
+a {text-decoration: none;}
+
+/* header serve para o destaque */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+/* Para todos os h1 */
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Somente para os h1 link */
+nav a {
+    color: white;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+nav a:hover{
+    opacity: 0.5;
+}
+
+/* Serve para quando passar o mouse em cima mudar de cor */
+h1 img {
+    opacity: 1;
+}
+
+h1 img:hover{
+    opacity: 0.5;
+}
+
+
+/* Classe que serve para o destaque */
+.destaque 
+{
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* Para todos os h2 */
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+.filmes-trailers {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.filmes-trailers img {
+    width: 150px;
+    margin: 1rem;
+    opacity: 0.5;
+}
+
+.filmes-trailers img:hover{
+    opacity: 1;
+}
+
+.filmes-em-cartaz {
+    background-color: rgb(26, 25, 25);
+    text-align: center;
+}
+
+.plataformas img {
+    filter: invert(70%);
+}
+
+.assistir{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+/*somente o h3 desse artigo  */
+.assistir h3 {
+    color: white;
+}
+
+/* A listas */
+.assistir ul {
+    list-style: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#contato form {
+    width: 50%;
+    margin: auto;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: white;
+    padding: 0.8rem 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* o rodapé */
+footer {
+    text-align: center;
+    background-color: rgb(31, 30, 30);
+    padding-bottom:1.5rem;
+    padding-top:1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
