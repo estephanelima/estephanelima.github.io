@@ -9,6 +9,10 @@ body,h1,h2,p,figure {
 /* Tag raiz */
 html{font-size: 18px;}
 
+img {
+    max-width: 100%;
+}
+
 /* Essa tag serve para todo o conteudo do site */
 body {
     background-color: black;
