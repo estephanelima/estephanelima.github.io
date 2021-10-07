@@ -32,7 +32,14 @@ header {
     height: 70px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
+
+.conteudo {
+    max-width: 1000px;
+    margin: auto;
+}
+
 
 /* Para todos os h1 */
 h1 {
