@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies for Family</title>
-    <link rel="stylesheet" href="css/estilo.css">
+
+<link rel="stylesheet" href="plugins/slick-1.8.1/slick-1.8.1/slick/slick.css">
+
+<link rel="stylesheet" href="plugins/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+
+<link rel="stylesheet" href="css/estilo.css">
+
 </head>
 <body>
     
@@ -20,13 +26,39 @@
     </header>
 
     <main>
-<article class="destaque">
+<article class="destaque" >
 
-    <h2>Filmes e Séries em destaque</h2>
-    <!-- Imagens passando pro lado -->
-    <figure>
+<div class="conteudo">
+    <div>
+        <h1>Filmes e Séries em destaque</h1>
+        <!-- Imagens passando pro lado -->
+        <figure>
         <img src="imagens/cruella.jpg" alt="Filme Cruella">
-    </figure>
+        </figure>
+        <h2>Cruella</h2>
+        <p>Inteligente, criativa e determinada, Estella quer fazer um nome para si através de seus designs e acaba chamando a atenção da Baronesa Von Hellman. elegante e voltada para a vingança.</p>
+    </div>
+
+    <div>
+        <h1>Filmes e Séries em destaque</h1>
+        <!-- Imagens passando pro lado -->
+        <figure>
+        <img src="imagens/viuvanegra.jpg" alt="Filme Viúva Negra">
+        </figure>
+        <h2>Viúva Negra</h2>
+        <p>o nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz.</p>
+    </div>
+
+    <div>
+        <h1>Filmes e Séries em destaque</h1>
+        <!-- Imagens passando pro lado -->
+        <figure>
+        <img src="imagens/semremorso.jpg" alt="Filme Sem Remorso">
+        </figure>
+        <h2>Sem Remorso</h2>
+        <p>Um fuzileiro naval de elite descobre uma conspiração internacional enquanto busca justiça pelo assassinato de sua esposa grávida.</p>
+    </div>
+</div>
 
 </article>
 
@@ -197,42 +229,20 @@
 
         </script>
 
-</body>
-</html>
 
+<script src="plugins/jquery-3.6.0.min.js"></script>
+<script src="plugins/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script>
+    $(document).ready(function(){
+  $('.conteudo').slick({
+    autoplay: true,
+    autoplaySpeed:4000,
+    arrows: false,
+    dots: true,
+  });
+});
+</script>
 
 </body>
 </html>
