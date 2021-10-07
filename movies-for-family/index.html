@@ -137,7 +137,7 @@
     <article id="contato">
         <h2>Entre em contato conosco</h2>
         <!-- Nome,Telefone, email e comentario -->
-        <form action=" " method="post">
+        <form id="my-form" action="https://formspree.io/f/xpzknkwn" method="post">
             <p>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome">
@@ -158,7 +158,8 @@
                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
             </p>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" id="my-form-button">Enviar</button>
+        <p id="my-form-status"></p>
 
         </form>
 
@@ -171,6 +172,30 @@
             <p>Movies for Family é um site fictício desenvolvido educacionalmente
                 <br>Senac Penha - 2021 </p>
         </footer>
+
+        <script>
+            var form = document.getElementById("my-form");
+            
+            async function handleSubmit(event) {
+              event.preventDefault();
+              var status = document.getElementById("my-form-status");
+              var data = new FormData(event.target);
+              fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+              }).then(response => {
+                status.innerHTML = "Obrigada por enviar!";
+                form.reset()
+              }).catch(error => {
+                status.innerHTML = "Oops! Tente novamente"
+              });
+            }
+            form.addEventListener("submit", handleSubmit)
+
+        </script>
 
 </body>
 </html>
